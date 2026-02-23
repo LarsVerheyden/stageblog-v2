@@ -1,6 +1,9 @@
 import { Link } from 'react-router';
 import { ArrowRight, Terminal } from 'lucide-react';
 import { Timeline } from '../components/Timeline';
+import { blogPosts } from '../data/blogPosts';
+
+const totalLessonsLearned = blogPosts.reduce((sum, post) => sum + post.learned.length, 0);
 
 export function Home() {
   return (
@@ -85,7 +88,7 @@ export function Home() {
           </div>
           <div className="p-6 rounded-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] text-center backdrop-blur-sm hover:border-[#00ff88] transition-all">
             <div className="text-4xl font-bold mb-2" style={{ fontFamily: 'var(--font-mono)', color: '#00ff88' }}>
-              42+
+              {totalLessonsLearned}
             </div>
             <div className="text-[var(--muted-foreground)] text-sm">Lessons learned</div>
           </div>
