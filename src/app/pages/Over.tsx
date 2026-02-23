@@ -17,22 +17,7 @@ export function Over() {
         {/* Developer Section */}
         <section className="mb-16">
           <div className="p-8 sm:p-12 rounded-2xl bg-[var(--card)] border border-[var(--glass-border)] backdrop-blur-sm">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Profile Image */}
-              <div className="flex justify-center md:justify-start">
-                <div className="relative">
-                  <div className="w-48 h-48 rounded-2xl overflow-hidden border-4 border-[var(--neon-cyan)] shadow-[0_0_40px_rgba(0,240,255,0.3)]">
-                    <img
-                      src="/1745511366002.jpg"
-                      alt="Lars Verheyden"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Info */}
-              <div className="md:col-span-2">
+            <div>
                 <h2 className="text-3xl font-bold mb-2">Lars Verheyden</h2>
                 <p className="text-[var(--neon-cyan)] mb-4" style={{ fontFamily: 'var(--font-mono)' }}>
                   Full-Stack Development Stagiair
@@ -68,7 +53,6 @@ export function Over() {
                     <span className="text-sm font-medium">LinkedIn</span>
                   </a>
                 </div>
-              </div>
             </div>
           </div>
         </section>
