@@ -31,7 +31,7 @@ export function Home() {
 
             {/* Subtitle */}
             <p className="text-xl sm:text-2xl text-[var(--muted-foreground)] mb-8">
-              Release notes van mijn stage in Heist-op-den-Berg
+              Release notes van mijn stage
             </p>
 
             {/* Intro Text */}
