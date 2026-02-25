@@ -29,7 +29,7 @@ export function Home() {
               className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[var(--neon-cyan)] via-[var(--neon-blue)] to-[var(--neon-purple)] bg-clip-text text-transparent leading-tight"
               style={{ fontFamily: 'var(--font-sans)' }}
             >
-              15 weken in productie bij Trans-IT
+              15 weken stage bij Trans-IT
             </h1>
 
             {/* Subtitle */}
@@ -63,8 +63,7 @@ export function Home() {
             Stage <span className="text-[var(--neon-cyan)]">Timeline</span>
           </h2>
           <p className="text-[var(--muted-foreground)] max-w-2xl mx-auto">
-            Mijn 15-weekse reis door de wereld van software development. 
-            Elke afgeronde week vertegenwoordigt nieuwe skills, inzichten en ervaringen.
+            Vijftien weken stage, week na week. Elke afgeronde week staat voor een release note met wat er is gedaan en geleerd.
           </p>
         </div>
 
