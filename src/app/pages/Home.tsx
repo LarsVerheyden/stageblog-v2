@@ -20,7 +20,7 @@ export function Home() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--glass-bg)] border border-[var(--glass-border)] mb-8 backdrop-blur-sm">
               <Terminal className="w-4 h-4 text-[var(--neon-cyan)]" />
               <span className="text-sm text-[var(--muted-foreground)]" style={{ fontFamily: 'var(--font-mono)' }}>
-                v1.3 • Week 3/15
+                v1.2 • Week 3/15
               </span>
             </div>
 
@@ -102,7 +102,7 @@ export function Home() {
             Tech <span className="text-[var(--neon-cyan)]">Stack</span>
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-            {['React', 'JavaScript', 'Git', 'AWS', 'GraphQL'].map(
+            {['React', 'JavaScript', 'Git', 'AWS', 'GraphQL', 'DynamoDB'].map(
               (tech) => (
                 <div
                   key={tech}
