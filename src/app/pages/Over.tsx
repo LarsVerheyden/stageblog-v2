@@ -10,7 +10,7 @@ export function Over() {
             Over deze <span className="text-[var(--neon-cyan)]">Stage</span>
           </h1>
           <p className="text-[var(--muted-foreground)] text-lg max-w-2xl mx-auto">
-            Mijn reis als stagiair-developer bij Trans-IT: van onboarding tot production-ready code.
+            Stage als developer bij Trans-IT: van onboarding tot meewerken aan de productie-app.
           </p>
         </div>
 
