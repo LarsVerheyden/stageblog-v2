@@ -87,7 +87,7 @@ export function Over() {
                   <div className="text-2xl font-bold text-[var(--neon-cyan)] mb-1" style={{ fontFamily: 'var(--font-mono)' }}>
                     6+
                   </div>
-                  <div className="text-[var(--muted-foreground)] text-sm">Teamleden</div>
+                  <div className="text-[var(--muted-foreground)] text-sm">Teamleden (scale-up in volle groei)</div>
                 </div>
                 <div className="p-4 rounded-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] text-center">
                   <div className="text-2xl font-bold text-[var(--neon-purple)] mb-1" style={{ fontFamily: 'var(--font-mono)' }}>
@@ -141,6 +141,10 @@ export function Over() {
                   <li className="flex items-start gap-2">
                     <span className="text-[var(--neon-cyan)] mt-1">▸</span>
                     <span>Git</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[var(--neon-cyan)] mt-1">▸</span>
+                    <span>DynamoDB</span>
                   </li>
                 </ul>
               </div>
