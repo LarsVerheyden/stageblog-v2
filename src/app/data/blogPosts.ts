@@ -11,7 +11,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['code', 'wins', 'lessons-learned', 'team'],
     highlights: [
       'Einde eerste sprint: ticket net niet op tijd af (bleek meer werk dan gedacht)',
-      'Sprintmeeting/review: eigen werk getoond; btw-validatie met autofill heel positief onthaald door het team',
+      'Sprintmeeting/review: eigen werk getoond: btw-validatie met autofill heel positief onthaald door het team',
       'Shortcut-ticket tussen verschillende schermen eindelijk afgerond',
       'Nieuw export-naar-Excel-ticket (analyse-tab): eerst backend-lambda\'s in een schema uitgetekend, daarna coderen',
       'Extra velden toegevoegd aan de transport-export',
@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
     ],
     technicalSpotlight: {
       title: 'Export Excel: eerst schema, dan code',
-      content: 'Bij het nieuwe export-naar-Excel-ticket onder de analyse-tab heb ik eerst de nodige backend-lambda\'s in een schema uitgetekend voordat ik begon te coderen. Dat hielp om de aanpak helder te krijgen en voorkomt dat je halverwege moet herschikken. Een goede gewoonte voor grotere tickets met meerdere onderdelen.',
+      content: 'Bij het nieuwe export-naar-Excel-ticket onder de analyse-tab heb ik eerst de nodige backend-lambda\'s in een schema uitgetekend (met Cursor)voordat ik begon te coderen. Dat hielp om de aanpak helder te krijgen en voorkomt dat je halverwege moet herschikken. Een goede gewoonte voor grotere tickets met meerdere onderdelen.',
     },
     learned: [
       'Sprint-einde: soms is een ticket net iets meer werk dan je denkt, niet alles past in de laatste dag',
@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
     ],
     changelog: {
       added: [
-        'Shortcut tussen schermen (transport overview ↔ customer tab) afgerond',
+        'Shortcut tussen schermen (transport overview -> customer tab) afgerond',
         'Start export-naar-Excel onder analyse-tab (schema backend-lambda\'s uitgewerkt)',
         'Extra velden in de transport-export'
       ],
@@ -41,7 +41,8 @@ export const blogPosts: BlogPost[] = [
         'Shortcut-ticket dat in week 2 net niet af was, nu wel afgerond'
       ],
       knownIssues: [
-        'Eén ticket op maandag (sprint-einde) net niet helemaal klaar, meer werk dan gedacht',
+        'Eén ticket op maandag (sprint-einde) net niet helemaal klaar—meer werk dan gedacht',
+        'Export-Excel-ticket nog in uitvoering'
       ]
     }
   },
@@ -60,7 +61,7 @@ export const blogPosts: BlogPost[] = [
       'GraphQL-schema aangepast met een collega, pipeline leren draaien en wachten op resultaten',
       'Git-les: deploy, hotfix en cherry-pick van commits',
       'Extra fields truck-ticket: veel backend-aanpassingen, daarna frontend, backend-error opgelost',
-      'Gestart: shortcut transport overview ↔ customer tab (technisch uitdagend, net niet af)'
+      'Gestart: shortcut transport overview -> customer tab (technisch uitdagend, net niet af)'
     ],
     technicalSpotlight: {
       title: 'GraphQL-schema en pipeline',
@@ -89,7 +90,7 @@ export const blogPosts: BlogPost[] = [
         'Nog enkele kleinere fouten rond het truck-ticket'
       ],
       knownIssues: [
-        'Shortcut transport overview ↔ customer tab net niet volledig afgewerkt (technisch uitdagend)',
+        'Shortcut transport overview -> customer tab net niet volledig afgewerkt (technisch uitdagend)',
         'emailCost-ticket vroeg meer tijd dan ingeschat'
       ]
     }
@@ -100,11 +101,11 @@ export const blogPosts: BlogPost[] = [
     version: 'v1.0',
     title: 'Onboarding & eerste tickets',
     date: '2026-02-07',
-    teaser: 'Mijn eerste week bij Trans-IT: geïntroduceerd in het bedrijf en de manier van werken, accounts en tools opgezet, en meteen al eerste tickets opgepakt—van URL-aanpassingen tot BTW-validatie en mijn eerste PR-reviews.',
+    teaser: 'Mijn eerste week bij Trans-IT: geïntroduceerd in het bedrijf en de manier van werken, accounts en tools opgezet, en meteen al eerste tickets opgepakt, van URL-aanpassingen tot BTW-validatie en mijn eerste PR-reviews.',
     tags: ['team', 'reflectie', 'code', 'wins'],
     highlights: [
       'Intro in het bedrijf: accounts, tools, sprintmeeting en dagelijkse stand-up',
-      'Eerste blik op de codebase en eerste tickets; URL-aanpassing opgelost net voor release',
+      'Eerste blik op de codebase en eerste tickets, URL-aanpassing opgelost net voor release',
       'Apply button & toll base price fix (thuiswerken, na zoeken naar de juiste files)',
       'BTW-nummer validatie en autofill via externe API geïmplementeerd',
       'Voor het eerst pull requests nagekeken met behulp van Copilot'
@@ -137,7 +138,7 @@ export const blogPosts: BlogPost[] = [
       ],
       knownIssues: [
         'Veel tijd verloren met zoeken naar de juiste files (één ticket, thuiswerken)',
-        'Tickets worden stilaan moeilijker—bijv. export naar Excel in het vooruitzicht'
+        'Tickets worden stilaan moeilijker: bijv. export naar Excel in het vooruitzicht'
       ]
     }
   }
