@@ -2,6 +2,52 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-4',
+    week: 4,
+    version: 'v1.3',
+    title: 'Twee complexe tickets & pipeline-problemen',
+    date: '2026-02-28',
+    teaser: 'Deze week stond in het teken van twee complexere tickets: een Outlook-.msg-button (uiteindelijk op blocked gezet) en een groter ticket rond custom velden per truck en per bedrijf, met pipeline-problemen en debugging, maar wel een goede afloop.',
+    tags: ['code', 'wins', 'lessons-learned', 'team'],
+    highlights: [
+      'Ticket .msg in Outlook openen: pipeline niet up-to-date, met Ismat de juiste branch in de pipeline gemerged en localhost weer werkende gekregen',
+      'Eerste dag eindigde met een reeks errors, het .msg-ticket bleek een pak minder makkelijk dan gedacht',
+      'Na veel proberen en overleg met Ismat: ticket op "blocked" gezet omdat de oplossing te complex zou worden in verhouding tot de meerwaarde die het gaf',
+      'Nieuw ticket: custom velden per truck en per bedrijf, met Ismat de backend-aanpak uitgewerkt en het ticket in twee duidelijke delen opgesplitst',
+      'Deel "custom veld per bedrijf": pipeline triggerde niet, na overleg en debugging toch opgelost',
+      'Deel "custom veld per truck": redelijk vlot tot een kleine bug, na afsluitende call met Ismat de bug opgelost en bevestiging dat hij tevreden was met wat al gerealiseerd was',
+      'Maandag: enkel nog de puntjes op de i zetten voor het custom-velden-ticket'
+    ],
+    technicalSpotlight: {
+      title: 'Custom velden: analyse en opsplitsing',
+      content: 'Bij het ticket rond custom velden per truck en per bedrijf heb ik de eerste dagen vooral aan analyse gedaan. Samen met Ismat heb ik de backend-aanpak uitgewerkt en het ticket in twee duidelijke delen opgesplitst. Die aanpak maakte het werk overzichtelijk en gaf een duidelijke volgorde van werken: eerst het bedrijfsgedeelte, daarna het truck-gedeelte. Voor grotere tickets blijkt zo\'n gezamenlijke analyse en opsplitsing essentieel voordat je in de code duikt.'
+    },
+    learned: [
+      'Pipeline up-to-date houden is cruciaal, met hulp van een collega de juiste branch mergen om weer te kunnen testen',
+      'Soms is een ticket makkelijk tot de errors zich opstapelen, dan is "blocked" zetten soms de beste keuze, zeker als de oplossing te complex wordt voor de meerwaarde die het geeft',
+      'Grotere tickets: eerst analyse en opsplitsing met een collega, dan gericht werken per deel',
+      'Backend-/pipeline-problemen (bijv. trigger die niet loopt) kosten tijd maar zijn met overleg en debugging op te lossen'
+    ],
+    changelog: {
+      added: [
+        'Start ticket extra (custom) velden per truck en per bedrijf',
+        'Backend-aanpak uitgewerkt met Ismat, ticket in twee duidelijke delen opgesplitst'
+      ],
+      changed: [
+        'Ticket .msg in Outlook openen na veel errors en overleg op "blocked" gezet'
+      ],
+      fixed: [
+        'Pipeline weer aan de praat (juiste branch gemerged met hulp van Ismat)',
+        'Backend pipeline-trigger bij bedrijfsgedeelte na overleg en debugging',
+        'Kleine bug bij extra veld per truck, opgelost in afsluitende call'
+      ],
+      knownIssues: [
+        'Outlook-.msg-ticket staat op blocked (oplossing te complex vs meerwaarde)',
+        'Custom-velden-ticket: maandag nog de puntjes op de i'
+      ]
+    }
+  },
+  {
     id: 'week-3',
     week: 3,
     version: 'v1.2',
