@@ -70,6 +70,17 @@ export function BlogDetail() {
           </div>
         </div>
 
+        {/* Optionele afbeelding bij de release */}
+        {post.image && (
+          <div className="mb-8 mx-auto max-w-md overflow-hidden rounded-2xl border border-[var(--glass-border)] bg-[var(--card)] shadow-lg">
+            <img
+              src={post.image}
+              alt={`Week ${post.week} – ${post.title}`}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        )}
+
         {/* Teaser */}
         <div className="p-6 rounded-2xl bg-[var(--card)] border border-[var(--glass-border)] backdrop-blur-sm mb-8">
           <p className="text-lg leading-relaxed">{post.teaser}</p>

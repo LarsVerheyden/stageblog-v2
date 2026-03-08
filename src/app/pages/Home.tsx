@@ -20,7 +20,7 @@ export function Home() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--glass-bg)] border border-[var(--glass-border)] mb-8 backdrop-blur-sm">
               <Terminal className="w-4 h-4 text-[var(--neon-cyan)]" />
               <span className="text-sm text-[var(--muted-foreground)]" style={{ fontFamily: 'var(--font-mono)' }}>
-                v1.3 • Week 4/15
+                v1.4 • Week 5/15
               </span>
             </div>
 
@@ -68,20 +68,20 @@ export function Home() {
         </div>
 
         <div className="p-8 rounded-2xl bg-[var(--card)] border border-[var(--glass-border)] backdrop-blur-sm">
-          <Timeline totalWeeks={15} completedWeeks={4} />
+          <Timeline totalWeeks={15} completedWeeks={5} />
         </div>
 
         {/* Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
           <div className="p-6 rounded-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] text-center backdrop-blur-sm hover:border-[var(--neon-cyan)] transition-all">
             <div className="text-4xl font-bold text-[var(--neon-cyan)] mb-2" style={{ fontFamily: 'var(--font-mono)' }}>
-              4/15
+              5/15
             </div>
             <div className="text-[var(--muted-foreground)] text-sm">Weken voltooid</div>
           </div>
           <div className="p-6 rounded-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] text-center backdrop-blur-sm hover:border-[var(--neon-purple)] transition-all">
             <div className="text-4xl font-bold text-[var(--neon-purple)] mb-2" style={{ fontFamily: 'var(--font-mono)' }}>
-              4
+              5
             </div>
             <div className="text-[var(--muted-foreground)] text-sm">Release notes</div>
           </div>

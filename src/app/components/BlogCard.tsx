@@ -11,8 +11,18 @@ export function BlogCard({ post }: BlogCardProps) {
   return (
     <Link
       to={`/blog/${post.id}`}
-      className="group block p-6 rounded-2xl bg-[var(--card)] border border-[var(--glass-border)] hover:border-[var(--neon-cyan)] transition-all duration-300 backdrop-blur-sm hover:shadow-[0_0_30px_rgba(0,240,255,0.2)] hover:translate-y-[-4px]"
+      className="group block overflow-hidden rounded-2xl bg-[var(--card)] border border-[var(--glass-border)] hover:border-[var(--neon-cyan)] transition-all duration-300 backdrop-blur-sm hover:shadow-[0_0_30px_rgba(0,240,255,0.2)] hover:translate-y-[-4px]"
     >
+      {post.image && (
+        <div className="aspect-video w-full overflow-hidden bg-[var(--glass-bg)]">
+          <img
+            src={post.image}
+            alt=""
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      )}
+      <div className="p-6">
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <div>
@@ -60,6 +70,7 @@ export function BlogCard({ post }: BlogCardProps) {
           <span className="text-sm font-medium">Lees meer</span>
           <ArrowRight className="w-4 h-4" />
         </div>
+      </div>
       </div>
     </Link>
   );

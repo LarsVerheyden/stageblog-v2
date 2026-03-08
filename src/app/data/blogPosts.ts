@@ -2,6 +2,56 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-5',
+    week: 5,
+    version: 'v1.4',
+    title: 'Afronden, bijsturen en vooruitkijken',
+    date: '2026-03-07',
+    teaser: 'Deze week stond in het teken van afronden, bijsturen en vooruitkijken: eerste intervisie, sprintmeeting en review, het custom-fields-ticket volledig afgewerkt, Git-opfrissing en cherry-picking, daarna bugfix documentupload, jobbeurs "Moving forward" en veel PR-comments met focus op herbruikbaarheid.',
+    image: '/images/week-5.png',
+    tags: ['code', 'wins', 'lessons-learned', 'team'],
+    highlights: [
+      'Maandag: eerste intervisiemoment, daardoor maar een halve dag op stage',
+      'Lange sprintmeeting en review: werk van de voorbije twee weken getoond, weinig inhoudelijke feedback, wel zelfstandig backend-changes doorgevoerd en pipeline correct getriggerd',
+      'Custom-fields-ticket volledig afgewerkt, eindresultaat mocht er zijn, korte Git-opfrissing van Ismat',
+      'Foutieve merge van vorige week hersteld via cherry-picking',
+      'Dag afgesloten met verwerken van PR-comments en analyseren van nieuwe tickets',
+      'Kleine bug opgelost rond uploaden van documenten voor drivers + requested changes op openstaande tickets',
+      'Job- en studiebeurs "Moving forward": info over overstap graduaat → bachelor + cv laten nakijken',
+      'Thuis nog kleine aanpassingen aan custom-fields-ticket, o.a. vertalingen naar het Bulgaars',
+      'Laatste dagen bijna volledig aan PR-comments custom-fields gewerkt, veel focus op herbruikbaarheid van de code',
+      'Inhoudelijke feedback positief, vooral structurele verbeteringen + call met Ismat, over het algemeen tevreden',
+      'Vrijdag gestart met nieuw ticket: extra checkbox in een kolom -> aanzet voor werk van volgende week'
+    ],
+    technicalSpotlight: {
+      title: 'Cherry-picking en PR-feedback op herbruikbaarheid',
+      content: 'Een foutieve merge van de vorige week heb ik met wat denkwerk kunnen herstellen via cherry-picking, weer een praktische toepassing van Git. Daarnaast stonden de laatste dagen in het teken van de pull-request-comments op het custom-fields-ticket. De inhoudelijke feedback was positief, het ging vooral om structurele verbeteringen en de herbruikbaarheid van de code. Door daar gericht op in te zetten, wordt de codebase beter onderhoudbaar en kan de oplossing vaker hergebruikt worden.'
+    },
+    learned: [
+      'Zelfstandig backend-changes doorvoeren en pipeline triggeren: goed te doen na eerdere uitleg',
+      'Cherry-picking in de praktijk om een foutieve merge te herstellen',
+      'PR-feedback richt zich vaak op structuur en herbruikbaarheid ->investeren daarin loont',
+      'Jobbeurs nuttig voor info over vervolgstappen (bachelor + minorkeuze) en cv-feedback'
+    ],
+    changelog: {
+      added: [
+        'Custom-fields-ticket volledig afgewerkt (inclusief vertalingen o.a. Bulgaars)',
+        'Start nieuw ticket: extra checkbox in een kolom'
+      ],
+      changed: [
+        'Requested changes doorgevoerd op openstaande tickets',
+        'Code structureel verbeterd en herbruikbaarder gemaakt na PR-comments'
+      ],
+      fixed: [
+        'Foutieve merge hersteld via cherry-picking',
+        'Bug rond uploaden van documenten voor drivers'
+      ],
+      knownIssues: [
+        'Nog veel te leren over herbruikbaarheid van code, daar in volgende tickets bewuster op letten'
+      ]
+    }
+  },
+  {
     id: 'week-4',
     week: 4,
     version: 'v1.3',

@@ -7,6 +7,8 @@ export interface BlogPost {
   title: string;
   date: string;
   teaser: string;
+  /** Optioneel: pad naar een afbeelding (bijv. in public/) voor bij de release */
+  image?: string;
   tags: TagType[];
   highlights: string[];
   technicalSpotlight: {
