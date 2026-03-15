@@ -2,6 +2,52 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-6',
+    week: 6,
+    version: 'v1.5',
+    title: 'Lopende tickets afronden & cargocard for drivers',
+    date: '2026-03-14',
+    teaser: 'De focus lag op afronden en aanscherpen: checkbox-ticket afgewerkt, custom fields-ticket verder uitgewerkt met een bugfix voor booleanvelden (met Ismat), daarna het nieuwe cargocard-for-drivers-ticket (analyse, backend en frontend) en veel tijd in PR-feedback en codekwaliteit. Custom fields definitief afgerond, cargocard klaar voor maandag.',
+    tags: ['code', 'wins', 'lessons-learned', 'team'],
+    highlights: [
+      'Checkbox-ticket afgewerkt',
+      'Custom fields-ticket: aangevraagde wijzigingen doorgevoerd, bug ontdekt bij opslaan booleanveld -> met Ismat stap voor stap opgelost',
+      'Halverwege de week: alle changes aan custom fields afgerond, gestart met nieuw "cargocard for drivers"-ticket',
+      'Cargocard: analyse en backend aangepakt, dag erna frontend uitgewerkt en getest tot alles correct werkte',
+      'Focus op codekwaliteit en best practices: korte CLI-les AWS van Steven, tests op cargocard (niets meer aan te passen voorlopig)',
+      'Veel tijd in verwerken van PR-comments op custom fields: extra refactoren voor herbruikbaarheid en goede patronen',
+      'Laatste dag: feedback verder uitgewerkt, één wijziging zorgde voor niet-werkende app, in call met Ismat opgelost',
+      'Custom fields-ticket definitief afgerond, eerste aanpassingen cargocard al voorbereid voor maandag'
+    ],
+    technicalSpotlight: {
+      title: 'Boolean-bug custom fields & cargocard end-to-end',
+      content: 'Bij het custom fields-ticket stuitte ik op een bug bij het opslaan van een booleanveld. Samen met Ismat ben ik daar stap voor stap doorgeraakt, wat weer liet zien hoe nuttig samenwerken is bij lastige bugs. Daarna het cargocard-for-drivers-ticket: eerst analyse en backend, dan frontend, en testen tot alles klopte. De combinatie van een nieuw ticket goed opzetten en ondertussen PR-feedback verwerken (refactoren voor herbruikbaarheid en patronen) maakte dat codekwaliteit deze week centraal stond.'
+    },
+    learned: [
+      'Bug bij booleanvelden in custom fields: met Ismat systematisch doorstappen om tot een oplossing te komen',
+      'Cargocard-ticket: analyse → backend → frontend → testen, deze flow werkt goed voor een nieuw feature-ticket',
+      'Korte AWS CLI-les van Steven: onthouden voor later gebruik (maar voorlopig niet veel nodig)',
+      'PR-comments verwerken kan een wijziging opleveren die de app breekt -> door samen te werken snel te traceren en op te lossen'
+    ],
+    changelog: {
+      added: [
+        'Checkbox-ticket afgerond',
+        'Nieuw ticket: cargocard for drivers (analyse, backend en frontend uitgewerkt)'
+      ],
+      changed: [
+        'Custom fields-ticket: alle aangevraagde wijzigingen doorgevoerd en PR-feedback verwerkt (refactoren, herbruikbaarheid, patronen)',
+        'Focus op codekwaliteit en best practices'
+      ],
+      fixed: [
+        'Bug bij opslaan booleanveld in custom fields',
+        'Niet-werkende applicatie na één PR-wijziging, in call met Ismat opgelost'
+      ],
+      knownIssues: [
+        'Cargocard-ticket: eerste aanpassingen voor maandag voorbereid, back-end changes gaan nodig zijn'
+      ]
+    }
+  },
+  {
     id: 'week-5',
     week: 5,
     version: 'v1.4',
@@ -57,7 +103,7 @@ export const blogPosts: BlogPost[] = [
     version: 'v1.3',
     title: 'Twee complexe tickets & pipeline-problemen',
     date: '2026-02-28',
-    teaser: 'Deze week stond in het teken van twee complexere tickets: een Outlook-.msg-button (uiteindelijk op blocked gezet) en een groter ticket rond custom velden per truck en per bedrijf, met pipeline-problemen en debugging, maar wel een goede afloop.',
+    teaser: 'Twee complexere tickets bepaalden het beeld: een Outlook-.msg-button (uiteindelijk op blocked gezet) en een groter ticket rond custom velden per truck en per bedrijf, met pipeline-problemen en debugging, maar wel een goede afloop.',
     tags: ['code', 'wins', 'lessons-learned', 'team'],
     highlights: [
       'Ticket .msg in Outlook openen: pipeline niet up-to-date, met Ismat de juiste branch in de pipeline gemerged en localhost weer werkende gekregen',
