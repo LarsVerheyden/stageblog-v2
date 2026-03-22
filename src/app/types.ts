@@ -1,5 +1,11 @@
 export type TagType = 'code' | 'lessons-learned' | 'fails' | 'wins' | 'reflectie' | 'team';
 
+export interface EvaluationWorkPointsSection {
+  title: string;
+  intro?: string;
+  items: string[];
+}
+
 export interface BlogPost {
   id: string;
   week: number;
@@ -17,6 +23,8 @@ export interface BlogPost {
     codeSnippet?: string;
   };
   learned: string[];
+  /** Optioneel: nadruk op werkpunten uit tussentijdse evaluatie op de releasepagina */
+  evaluationWorkPoints?: EvaluationWorkPointsSection;
   changelog: {
     added: string[];
     changed: string[];

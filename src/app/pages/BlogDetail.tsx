@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, Zap, Code2, BookOpen } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import { TagPill } from '../components/TagPill';
 import { ChangelogBox } from '../components/ChangelogBox';
+import { EvaluationWorkPointsBox } from '../components/EvaluationWorkPointsBox';
 
 export function BlogDetail() {
   const { id } = useParams<{ id: string }>();
@@ -160,6 +161,10 @@ export function BlogDetail() {
             </ul>
           </div>
         </section>
+
+        {post.evaluationWorkPoints && (
+          <EvaluationWorkPointsBox workPoints={post.evaluationWorkPoints} />
+        )}
 
         {/* Changelog */}
         <section className="mb-12">

@@ -2,6 +2,73 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-7',
+    week: 7,
+    version: 'v1.6',
+    title: 'Tussentijdse evaluatie, supplier price on order en late reasons',
+    date: '2026-03-22',
+    teaser:
+      'De week begon met mijn tussentijdse evaluatie. We bespraken hoe de stage loopt, wat goed gaat, wat minder goed gaat en waar ik kan groeien. Daarna volgden de sprintmeeting en review met positieve feedback op mijn demo van het custom-fields-ticket. Verder werken aan supplier price on order (Lambda en frontend), load- en unload-referenties in de kostenmail, een bugfix in de zoekfunctie van het transport overview, late reasons op transportdetail en de start van het estimated ETD time-ticket.',
+    tags: ['code', 'wins', 'lessons-learned', 'team', 'reflectie'],
+    highlights: [
+      'Tussentijdse evaluatie: werkpunten genoteerd en veel waardering voor inzet, zelfstandigheid en de complexere tickets die ik al heb opgepakt',
+      'Eerste dag vooral overleg door evaluatie en aansluitende sprintmeeting',
+      'Sprintreview: positieve feedback op de demo van het custom-fields-ticket',
+      'Gestart met analyse van supplier price on order en een eerste schemawijziging voorbereid',
+      'Supplier-ticket verder uitgewerkt: kleine Lambda-aanpassing, daarna frontend die vlot vooruitging',
+      'Ticket load- en unload-referenties in de kostemail inhoudelijk bijna afgerond, dag nadien duidelijkere fallbacktekst toegevoegd',
+      'Bug in zoekfunctie transport overview opgelost: zoeken op plaatsnamen bij Copilot-gegenereerde transporten',
+      'Ticket late reasons bij transportdetail afgerond',
+      'Reeks kleine requested changes op eerdere tickets doorgevoerd',
+      'Gestart met analyse van estimated ETD time: nog geen gelijkaardige functionaliteit in de app, eerste basis gelegd voor volgende week'
+    ],
+    technicalSpotlight: {
+      title: 'Van evaluatie naar resultaat: supplier ticket en transportdetail',
+      content:
+        'De evaluatie gaf structuur aan werkpunten en bevestigde dat zelfstandigheid en complexere tickets gewaardeerd worden. In de sprintreview kwam de demo van het custom-fields-ticket terug als erkenning voor de tijd en moeite. Daarna het supplier price on order-ticket: na schema en Lambda ging de frontend relatief vlot. Bij de kostenmail waren load- en unload-referenties met een betere fallbacktekst afgewerkt. Late reasons op transportdetail en een zoekbug bij Copilot-transporten maakten de week inhoudelijk afgerond, terwijl estimated ETD time een nieuwe uitdaging wordt zonder bestaand patroon in de applicatie. (en dus ook geen voorbeeld)'
+    },
+    learned: [
+      'Een tussentijdse evaluatie helpt om groei en sterke punten scherp te krijgen en werkpunten concreet te noteren',
+      'Positieve feedback op een demo na veel werk voelt bevestigend en motiveert voor vergelijkbare tickets',
+      'Nieuwe tickets: eerste schemawijziging en Lambda voorbereiden maakt de frontend-bouw vlotter',
+      'Kleine tickets zoals referenties in mail en fallbacktekst verfijnen leveren merkbare kwaliteitswinst op',
+      'Zoeken op gegenereerde data vraagt aandacht voor edge cases, bijvoorbeeld plaatsnamen bij Copilot-transporten',
+      'Features zonder gelijkaardige bestaande bouwstenen vragen extra analysedagen voordat je verder bouwt'
+    ],
+    evaluationWorkPoints: {
+      title: 'Werkpunten uit de tussentijdse evaluatie',
+      intro:
+        'De lector had een vragenlijst met verschillende aspecten van de stage. Ismat (stagementor) is met mij vraag per vraag door die lijst gegaan. Bij elke vraag kreeg ik uitleg over hoe hij mijn prestatie daar zag. Hieronder de werkpunten waar ik de komende weken bewust op blijf inzetten.',
+      items: [
+        'Sneller werken',
+        'Meer vragen stellen, zeker bij thuiswerk, te veel tijd verloren met vastzitten',
+        'Communiceren met het hele team, niet enkel met Ismat en Rayan',
+        'Overzicht altijd bewaren',
+        'Analyse eerst zelf doen voor je AI gebruikt',
+        'Herbruikbaarheid en compactheid',
+        'Git nog extra bekijken',
+        'Meer eigen werkwijze verantwoorden en meer alternatieve werkwijzen suggereren: nadenken voor mezelf, niet blindelings volgen, met of zonder AI'
+      ]
+    },
+    changelog: {
+      added: [
+        'Supplier price on order: schema, Lambda-aanpassing en frontend',
+        'Load- en unload-referenties in de kostemail met verbeterde fallbacktekst',
+        'Late reasons zichtbaar op transportdetail',
+        'Start analyse en basis voor estimated ETD time-ticket'
+      ],
+      changed: [
+        'Kleine requested changes op eerder afgeronde tickets doorgevoerd'
+      ],
+      fixed: [
+        'Zoekfunctie transport overview: zoeken op plaatsnamen bij Copilot-gegenereerde transporten'
+      ],
+      knownIssues: [
+        'Estimated ETD time: uitdagend omdat vergelijkbare functionaliteit nog ontbreekt, volgende week verder uitwerken'
+      ]
+    }
+  },
+  {
     id: 'week-6',
     week: 6,
     version: 'v1.5',
