@@ -2,6 +2,52 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-8',
+    week: 8,
+    version: 'v1.7',
+    title: 'Estimated ETD time, Copilot-jobs afwijzen en containerfoto als bijlage',
+    date: '2026-03-29',
+    teaser:
+      'Deze week vooral twee grotere tickets verder afwerken, testen en bijsturen. Estimated ETD time kreeg nog twee volledige dagen: fouten opgelost, samen met Ismat het ticket van drie naar vijf story points gezet omdat het complexer bleek, feedback meteen toegepast en klaar voor een eerste technische review. Daarna een ticket om Copilot-gegenereerde jobs af te wijzen: extra analyse, daarna grotendeels uitgewerkt en getest. In de tweede helft dat ticket afgerond en gestart met een containerfoto als bijlage bij het automatische bericht. Backend en frontend aangepast, testen leverde nog problemen op en aan het einde van de week was het nog niet volledig in orde, met een duidelijke vervolgstap voor maandag.',
+    tags: ['code', 'wins', 'lessons-learned', 'team'],
+    highlights: [
+      'Estimated ETD time: twee volledige dagen, bugs opgelost en met Ismat story points van drie naar vijf gezet wegens hogere complexiteit',
+      'Eerste feedback op estimated ETD time snel toegepast, ticket klaar voor eerste technische review',
+      'Nieuw ticket: Copilot-gegenereerde jobs kunnen afwijzen, eerst dieper in de bestaande Copilot-flow gedoken',
+      'Copilot-afwijzen-ticket: groot deel uitgewerkt, getest en later in de week volledig afgerond',
+      'Nieuw ticket: foto van een container meesturen als bijlage bij het automatische bericht, na analyse backend- en frontend-wijzigingen',
+      'Bij testen containerfoto nog niet volledig zoals gewenst, meerdere oplossingen geprobeerd, einde week grote stap gezet, maandag verder'
+    ],
+    technicalSpotlight: {
+      title: 'Van story points bijsturen tot bijlagen in automatische berichten',
+      content:
+        'Het estimated ETD time-ticket liet zien hoe schattingen kunnen verschuiven zodra de complexiteit duidelijker wordt. Samen met Ismat de story points verhogen geeft ruimte voor kwaliteit in plaats van te forceren op het oorspronkelijke plaatje. Snel feedback verwerken hielp om het ticket review-klaar te krijgen. Bij het afwijzen van Copilot-jobs was vertrouwdheid met de bestaande flow belangrijk: eerst analyseren, dan bouwen en testen. Het bijlage-ticket combineert weer backend en frontend, met testen dat pas laat de echte kanttekeningen zichtbaar maakt. Dat hoort bij grotere wijzigingen rond berichten en bestanden.'
+    },
+    learned: [
+      'Als een ticket complexer uitpakt dan gedacht, story points bijsturen met je mentor is beter dan jezelf kort houden',
+      'Onbekendere domeinen (zoals Copilot-gedrag) vragen eerst analyse voordat je grote stukken code schrijft',
+      'Een ticket kan inhoudelijk klaar zijn voor review terwijl je de volgende al plant: goede overgang tussen tickets',
+      'Bijlagen en automatische berichten: testen wijst pas uit waar het nog hapert',
+      'Niet alles hoeft op vrijdag perfect: een duidelijke tussenstand en plan voor maandag is ook waardevol'
+    ],
+    changelog: {
+      added: [
+        'Estimated ETD time: uitwerking tot eerste technische review, inclusief correcties na feedback',
+        'Functionaliteit om Copilot-gegenereerde jobs af te wijzen (volledig afgerond in de loop van de week)',
+        'Start en uitwerking: containerfoto als bijlage bij automatisch bericht (backend en frontend)'
+      ],
+      changed: [
+        'Estimated ETD time-ticket: story points met Ismat verhoogd van drie naar vijf na inschatting van complexiteit'
+      ],
+      fixed: [
+        'Diverse fouten opgelost in het estimated ETD time-ticket tijdens afwerking en testen'
+      ],
+      knownIssues: [
+        'Containerfoto als bijlage: gedrag bij testen nog niet zoals gewenst, vervolg gepland na het weekend'
+      ]
+    }
+  },
+  {
     id: 'week-7',
     week: 7,
     version: 'v1.6',
