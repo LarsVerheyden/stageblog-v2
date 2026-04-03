@@ -2,6 +2,52 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-9',
+    week: 9,
+    version: 'v1.8',
+    title: 'Automatische mails, Lambda-splitsing en verfijning rond Copilot en bijlagen',
+    date: '2026-04-05',
+    teaser:
+      'Deze week stond vooral in het teken van een groter technisch ticket: automatisch mails versturen naar de leverancier bij het verzenden van een transport naar de driver. Dat bleek inhoudelijk zwaarder dan eerst gedacht. Na uitbreiding van de logica en het opzetten van de Lambda liep ik vast op deployproblemen door de grootte van de environment variables. Samen met Ismat losten we dat op door de Lambda op te splitsen, waarna de pipeline weer correct draaide en ik verder kon testen. Nadien nog werk met het correct triggeren van de mail, tegen het einde van de week kon ik alles verifiëren. Daarnaast kleinere taken: het afwijzen van Copilot-jobs verfijnd (extra bevestigingsmodal weg op feedback) en het meesturen van een containerfoto als bijlage bij een automatisch bericht uitgewerkt na grondige analyse. Puzzelen, debuggen en bestaande logica verbeteren, met een stabiele functionaliteit als resultaat.',
+    tags: ['code', 'wins', 'lessons-learned', 'team'],
+    highlights: [
+      'Groot ticket automatische mails bij verzenden naar de driver: complexer dan ingeschat, logica uitgebreid en benodigde Lambda aangepast',
+      'Deploy geblokkeerd door omvang environment variables, samen met Ismat Lambda opgesplitst en pipeline weer werkende gekregen',
+      'Permissies en triggers voor de mail verder afgesteld tot gedrag klopte',
+      'Einde week: volledige verificatie en documentatie van de mail-automatisering',
+      'Ticket Copilot-jobs afwijzen: op feedback extra bevestigingsmodal verwijderd om het aantal stappen voor de gebruiker te beperken',
+      'Containerfoto als bijlage bij automatisch bericht: na analyse uitgewerkt en opgelost',
+      'Weekbeeld: veel puzzelen en debuggen, belangrijkste functionaliteit uiteindelijk stabiel en werkend'
+    ],
+    technicalSpotlight: {
+      title: 'Lambda te groot',
+      content:
+        'Te grote environment vairiables kunnen een deploy tegenhouden zonder dat de logica zelf fout is. Door de verantwoordelijkheden over meerdere Lambda’s te verdelen, blijft elke functie binnen de limieten en blijft de pipeline werkende. Het toont ook dat infrastructuur en applicatiecode samen moeten kloppen voordat je een feature echt “af” kunt noemen.'
+    },
+    learned: [
+      'Extra UI-stappen (zoals een modal) kunnen tegenstrijdig zijn met gebruikersfeedback: minder "clicks" is soms beter',
+      'CloudWatch kende ik nog niet, deze week voor het eerst gebruikt om logs te doorzoeken en met queries te filteren, zodat ik problemen kon lokaliseren',
+      'Wanneer iets niet werkt, hoeft de oorzaak niet in de applicatielogica te zitten, deploy, pipeline of omgeving kunnen net zo goed het probleem zijn',
+      'Documenteren nadat alles werkt is handig voor collega\'s en voor jezelf later'
+    ],
+    changelog: {
+      added: [
+        'Automatische mailflow bij transport verzenden naar driver: uitgewerkte logica, gesplitste Lambda-setup, documentatie na verificatie',
+        'Containerfoto als bijlage bij automatisch bericht (na analyse)'
+      ],
+      changed: [
+        'Copilot-gegenereerde jobs afwijzen: bevestigingsmodal verwijderd na feedback (minder stappen voor de gebruiker)'
+      ],
+      fixed: [
+        'Deploy/pipeline na env-size-probleem -> Lambda opgesplitst',
+        'Permissies en triggerlogica voor automatische mails tot consistent gedrag'
+      ],
+      knownIssues: [
+        'Nog werken aan: iets sneller hulp vragen en minder "koppig" alles zelf willen oplossen'
+      ]
+    }
+  },
+  {
     id: 'week-8',
     week: 8,
     version: 'v1.7',
