@@ -2,6 +2,51 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-10',
+    week: 10,
+    version: 'v1.9',
+    title: 'Custom fields verfijnen, export en reminders uitbreiden, requested changes afronden',
+    date: '2026-04-12',
+    teaser:
+      'Deze week bouwde ik vooral verder op lopende functionaliteit met focus op kwaliteit en herbruikbaarheid. Het ticket rond custom fields for drivers is zo goed als volledig afgerond en de bestaande logica werd opgeschoond zodat uitbreidingen later vlotter gaan. Daarna startte ik een nieuw ticket om customer reference en containernummer toe te voegen in de Excel-export en in reminder-mails. Na analyse volgden de nodige Lambda-wijzigingen en de dag erna werkte ik alles af tot het ticket volledig getest was. Tussen het werk door namen we met het team een korte ijsjespauze. De week eindigde met een volledige dag requested changes verwerken, vooral rond leesbaarheid en kleine verbeteringen, waardoor beide tickets er merkbaar strakker op staan.',
+    tags: ['code', 'wins', 'lessons-learned', 'team'],
+    highlights: [
+      'Ticket custom fields for drivers bijna volledig afgerond met extra focus op kwaliteit',
+      'Bestaande custom-fields-logica opgeschoond en herbruikbaarder gemaakt voor latere uitbreidingen',
+      'Nieuw ticket opgestart voor customer reference en containernummer in Excel-export en reminder-mail',
+      'Na eerste analyse de nodige Lambda-aanpassingen doorgevoerd',
+      'Ticket rond export en reminders de volgende dag volledig uitgewerkt en getest',
+      'Korte pauze met collega’s in het lokale ijssalon zorgde voor een leuke break',
+      'Laatste dag volledig besteed aan requested changes met focus op leesbaarheid en kleine verbeteringen'
+    ],
+    technicalSpotlight: {
+      title: 'Herbruikbaarheid als versneller',
+      content:
+        'Door de custom-fields-logica eerst op te schonen en herbruikbaar te maken, kon ik daarna sneller en gerichter verder op het nieuwe ticket rond export en reminders. Die basis hielp om de Lambda-wijzigingen duidelijk af te bakenen en gecontroleerd te testen. Het maakte opnieuw zichtbaar dat investeren in structuur vooraf latere uitbreidingen eenvoudiger maakt.'
+    },
+    learned: [
+      'Afwerken is meer dan klaar krijgen, de kwaliteit van de basis bepaalt hoe vlot een volgend ticket gaat',
+      'Herbruikbare code verlaagt de drempel om nieuwe velden op meerdere plekken toe te voegen',
+      'Requested changes rond leesbaarheid lijken klein maar maken een groot verschil in onderhoudbaarheid',
+    ],
+    changelog: {
+      added: [
+        'Customer reference en containernummer toegevoegd aan Excel-export van de reminder-mail',
+        'Benodigde Lambda-wijzigingen voor de nieuwe export- en reminderdata'
+      ],
+      changed: [
+        'Custom-fields-logica herwerkt met nadruk op opschoning en herbruikbaarheid',
+        'Codekwaliteit verhoogd door requested changes op twee recente tickets volledig te verwerken'
+      ],
+      fixed: [
+        'Leesbaarheidsproblemen en kleine verbeterpunten uit reviewcomments op beide tickets'
+      ],
+      knownIssues: [
+        'Custom fields for drivers was deze week zo goed als afgerond, laatste afronding nodig in de volgende week'
+      ]
+    }
+  },
+  {
     id: 'week-9',
     week: 9,
     version: 'v1.8',
