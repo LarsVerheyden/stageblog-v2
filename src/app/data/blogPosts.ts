@@ -9,6 +9,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-12',
     teaser:
       'Deze week bouwde ik vooral verder op lopende functionaliteit met focus op kwaliteit en herbruikbaarheid. Het ticket rond custom fields for drivers is zo goed als volledig afgerond en de bestaande logica werd opgeschoond zodat uitbreidingen later vlotter gaan. Daarna startte ik een nieuw ticket om customer reference en containernummer toe te voegen in de Excel-export en in reminder-mails. Na analyse volgden de nodige Lambda-wijzigingen en de dag erna werkte ik alles af tot het ticket volledig getest was. Tussen het werk door namen we met het team een korte ijsjespauze. De week eindigde met een volledige dag requested changes verwerken, vooral rond leesbaarheid en kleine verbeteringen, waardoor beide tickets er merkbaar strakker op staan.',
+    image: '/images/week-10.png',
     tags: ['code', 'wins', 'lessons-learned', 'team'],
     highlights: [
       'Ticket custom fields for drivers bijna volledig afgerond met extra focus op kwaliteit',
