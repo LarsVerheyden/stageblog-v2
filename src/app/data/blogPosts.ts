@@ -2,6 +2,48 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-11',
+    week: 11,
+    version: 'v2.0',
+    title: 'Location notes afronden, e-mailhandtekening en beheer van mailtemplates opzetten',
+    date: '2026-04-19',
+    teaser:
+      'Deze week startte met het afronden van het location-notes-ticket: opmerkingen bij locaties verschijnen nu als tooltips in het transportoverzicht en op de planning-naar-transports-pagina. Daarna kreeg ik van Ismat een groter, acht storypoints ticket: gebruikers moeten hun e-mailhandtekening kunnen customizen en alle uitgaande mails vanuit de app moeten qua template aanpasbaar worden. Na gezamenlijke eerste analyse en voorbereidende schema-wijzigingen ging ik zelf verder met uitwerking, een duidelijke takenlijst, en de stapsgewijze opbouw van de basis. Ik definieerde een “contract” voor de signature, paste emailsUtil daarop aan, bouwde een eerste edit-formulier en schoof daarna richting frontend: user signature grotendeels afgewerkt, UI verfijnd en het grootste deel van de company-signature opgezet. Nog enkele final touches en UX-verfijning, maar de kern staat.',
+    tags: ['code', 'wins', 'lessons-learned', 'team'],
+    highlights: [
+      'Location-notes-ticket af: tooltips met locatie-opmerkingen in transportoverzicht en op planning-naar-transports',
+      'Nieuw acht-storypoints ticket van Ismat: custom user signature + aanpasbare templates voor alle uitgaande mails',
+      'Eerste gezamenlijke analyse, schema voorbereid, daarna zelfstandig uitwerking en takenlijst',
+      'Analyse verdiept, basis opgebouwd: signature-contract, emailsUtil hierop afgestemd, eerste handtekeningformulier',
+      'Focus op frontend: user signature nagenoeg rond, UI aangescherpt, company-signature grotendeels opgezet',
+      'Klein opruimwerk en usability nog open, maar kernfunctionaliteit voor het signature deel is afgerond'
+    ],
+    technicalSpotlight: {
+      title: 'Signature contract: dezelfde afspraken in util en UI',
+      content:
+        'Centraliseren in een duidelijk contract voor de e-mailhandtekening maakt dat emailsUtil en de UI dezelfde afspraken houden: minder problemen bij uitbreiding en minder werk bij nieuwe template-plekken. Een takenlijst na de eerste analyse hield overzicht terwijl ik stap voor stap de base-laag en daarna de schermen opbouwde. Dat hielp om “company” en “user” gescheiden te houden, maar toch in hetzelfde spoor te blijven.'
+    },
+    learned: [
+      'Bij 8 story points helpt expliciet bijhouden wat al klaar is en wat nog in de frontend of UX zit, zodat je eindfase niet vertekent',
+      'Een gedeeld contract tussen util en UI voorkomt dat handtekening en templates op twee manieren worden gedefinieerd',
+      'Na een ticket met duidelijk scope-einde (location notes) voelt de switch naar een groter ticket zwaarder: dat hoort erbij en geeft groeimogelijkheden'
+    ],
+    changelog: {
+      added: [
+        'Location-opmerkingen als tooltips in transportoverzicht en op planning-naar-transports',
+        'Eerste versie van signature- en template-systeem: contract voor signature, integratie in emailsUtil, editformulier en UI voor user- en grotendeels company signature'
+      ],
+      changed: [
+        'emailsUtil aangepast om te werken met het nieuwe signature-contract'
+      ],
+      fixed: [],
+      knownIssues: [
+        'Final touches en usability-verbeteringen voor handtekening en template-beheer is voor volgende week',
+        'Mailtemplates volledig gebruiken en afronden moet verder afgewerkt worden in het vervolg van dit ticket'
+      ]
+    }
+  },
+  {
     id: 'week-10',
     week: 10,
     version: 'v1.9',
