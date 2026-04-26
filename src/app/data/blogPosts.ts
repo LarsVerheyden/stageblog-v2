@@ -2,6 +2,50 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-12',
+    week: 12,
+    version: 'v2.1',
+    title: 'E-mailhandtekening afronden, herbruikbaar contract en custom auto mails opbouwen',
+    date: '2026-04-26',
+    teaser:
+      'Deze week heb ik vooral verder gewerkt aan het grote ticket rond e-mailhandtekening en custom mails. Ik rondde de volledige UI af voor de gebruikers- en bedrijfshandtekening, zodat alles duidelijk is te customizen. Daarna startte ik met het tweede deel en zette een eerste stap voor de Lambdas (layer), met oog op hergebruik zoals bij de bestaande e-mailutil. Uitgebreide feedback van Ismat ging vooral over hergebruik. Op zijn advies werd het oorspronkelijke signaturecontract breder, zodat dezelfde opzet straks ook voor custom auto mails past. Ook zette ik placeholders in zodat geen enkele gebruiker van nul moet starten. Later verfijnde ik de handtekening-UI, werkte de resolver en het schema bij en kon ik alles met de pipeline mergen. Tegen het einde lag de focus op custom mails, met een grote json voor standaard- en fallbacktemplates en de pagina om custom mails te beheren. Het ticket is nog niet 100% klaar, maar de basis voor handtekening en custom mails staat stevig en is voor maandag klaar om af te werken.',
+    tags: ['code', 'wins', 'lessons-learned', 'team'],
+    highlights: [
+      'E-mailhandtekening-UI afgewerkt voor user en company met een overzichtelijke flow',
+      'Eerste Lambda-layer neergezet, aansluitend op bestaande patronen zoals de e-mailutil',
+      'Feedback van Ismat vooral rond hergebruik: contract verbreed zodat custom auto mails dezelfde structuur kunnen gebruiken',
+      'Placeholders, zodat iemand zonder e-mail signature niet alles helemaal opnieuw hoeft te maken',
+      'Signature-UI aangescherpt, e-mailhandtekeningresolver en schema aangepast, klaar richting pipeline',
+      'Custom mail: grote json met default- en fallbacktemplates uitgewerkt, meer tijd dan eerst verwacht',
+      'Pagina voor beheer van custom mails stond tegen het eind van de week goed op punt'
+    ],
+    technicalSpotlight: {
+      title: 'Eén contract voor signature en toekomstige mails',
+      content:
+        'Door het contract te verbreden in plaats van alleen de handtekening mee te nemen, houden de UI, de resolver en later de custom auto mails dezelfde afspraken. Een layer voor de Lambdas, zoals bij de bestaande e-mailutil, laat dezelfde stukken op meerdere plekken werken. Placeholders zorgen dat de "eerste ervaring" niet leeg is, makkelijker te testen en gebruiksvriendelijker.'
+    },
+    learned: [
+      'Bij grote json-structuren lijkt het eenvoudig, toch kost het uitwerken en uitzoeken van default en fallback al snel langer dan je denkt',
+      'Herbruikbaarheid in review terugkrijgen geeft richting, liever even herschikken in het midden van het werk dan straks overal anders oplossen',
+      'Als dagen in het ticket logisch op elkaar doorgaan, is het eenvoudig om door te lopen, ook wanneer het eindpunt niet dezelfde week haalbaar is',
+      'Custom mails met een grote json voor default- en fallbacktemplates is een goede manier om de basis te leggen voor custom mails, zodat later meer kan worden toegevoegd'
+    ],
+    changelog: {
+      added: [
+        'Afgeronde UI voor gebruikers- en bedrijfshandtekening, eerste Lambda-layer met hergebruik',
+        'Algemener e-mailcontract met placeholders, updates aan resolver en schema, json voor custom mailtemplates met default en fallback',
+        'Stabiele basis-UI om custom mails te beheren'
+      ],
+      changed: [
+        'Signature-gericht contract en resolver op schaal gebracht richting breder e-mailgebruik'
+      ],
+      fixed: [],
+      knownIssues: [
+        'Ticket handtekening en custom mails nog niet volledig afgesloten, resterend werk gepland maandag'
+      ]
+    }
+  },
+  {
     id: 'week-11',
     week: 11,
     version: 'v2.0',
