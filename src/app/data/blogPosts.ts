@@ -2,6 +2,52 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-13',
+    week: 13,
+    version: 'v2.2',
+    title: 'Basis en UI rond signatures en mailtemplates verder afwerken',
+    date: '2026-05-03',
+    teaser:
+      'Deze week ging volledig naar het verder afwerken van de basis en de UI rond de signatures en mailtemplates, zonder al aan Lambdas of layers te raken. Ik begon met een korte uitleg over GitHub-reviews van Steven en pikte in de voormiddag heel wat kleine reviewopmerkingen op, vooral rond leesbaarheid en consistentie. Tijdens de sprintmeeting had ik nog niet veel om te tonen omdat ik nog midden in hetzelfde grote ticket zat. Daarna kreeg ik van Ismat vooral feedback over gebruiksvriendelijkheid, kleine dingen zoals waar een Save-knop hoort te staan, vanzelfsprekend voor vaste gebruikers maar minder voor mij. De volgende dag heb ik die designsuggesties verwerkt en ook enkele zaken aangepast die functioneel niet helemaal logisch waren binnen de bestaande flow van de applicatie. Daarna verschoof de focus weer volledig naar de mailtemplates: de json grondig nagekeken, vergeleken en aangepast na feedback van Ismat, zodat de structuur nu beter aansluit bij hoe de app met default en custom templates moet omgaan. Op het einde van de week kwam er opnieuw feedback, deze keer vooral over placeholders en een paar kleine UI-accenten. Die placeholders heb ik gerefactord en consistenter gemaakt, wat verrassend veel werk was, maar er wel voor zorgt dat de gebruiker straks een duidelijker en vollediger voorbeeld ziet bij het aanpassen van een template. Zo staat de hele basis (json, placeholders en UI) nu klaar, zodat ik volgende week kan starten aan de laatste stap: de Lambda- en layerkant van het ticket.',
+    tags: ['code', 'lessons-learned', 'team'],
+    highlights: [
+      'Korte uitleg van Steven over GitHub-reviews, daarna in de voormiddag een reeks kleine reviewopmerkingen opgepikt en toegepast',
+      'Sprintmeeting met weinig om te demonstreren, want hetzelfde grote ticket liep nog door',
+      'Feedback van Ismat over gebruiksvriendelijkheid: kleine UI-keuzes zoals de plaats van een Save-knop',
+      'Designsuggesties verwerkt en enkele functioneel onlogische stukken bijgestuurd binnen de bestaande flow',
+      'Json van de mailtemplates grondig nagekeken, vergeleken en aangepast na feedback van Ismat',
+      'Structuur van default en custom templates beter laten aansluiten bij hoe de app ermee werkt',
+      'Op het einde van de week feedback gekregen over placeholders en een paar kleine UI-accenten',
+      'Placeholders gerefactord en consistenter gemaakt zodat de gebruiker straks een duidelijker voorbeeld ziet'
+    ],
+    technicalSpotlight: {
+      title: 'Eerst de basis afmaken, dan pas naar Lambdas en layers',
+      content:
+        'Door deze week bewust nog niet aan de Lambdas en layers te beginnen, kon ik de basis (json, placeholders en UI) eerst netjes afwerken. Reviewopmerkingen rond leesbaarheid en consistentie samen oppakken zorgt voor minder kleine verschillen verspreid over het ticket. De feedback van Ismat over gebruiksvriendelijkheid maakte zichtbaar dat sommige UI-keuzes voor een vaste gebruiker vanzelfsprekend zijn maar voor mij niet, dus dat was nuttig om vroeg mee te nemen. Het refactoren van placeholders nam meer tijd dan verwacht, maar dat soort consistentiewerk loont straks dubbel zodra de Lambda- en layerkant erbij komt.'
+    },
+    learned: [
+      'Eerst de basis en UI laten kloppen voor je naar de Lambda- en layerkant gaat, geeft minder verspreid herstelwerk achteraf',
+      'Wat voor een vaste gebruiker vanzelfsprekend is, is dat niet altijd voor iemand die de app pas leert kennen, vroege UX-feedback is daarom waardevol',
+      'Een sprintmeeting waar je weinig kan tonen voelt minder fijn, maar bij grotere tickets is dat normaal en geen probleem',
+      'Placeholders consistenter maken is verrassend veel werk, maar zorgt voor een veel duidelijker voorbeeld voor de eindgebruiker'
+    ],
+    changelog: {
+      added: [
+        'Consistentere placeholders in de mailtemplates voor een duidelijker voorbeeld bij het aanpassen van een template',
+        'Verwerkte designsuggesties van Ismat in de signature- en templatescherm-UI'
+      ],
+      changed: [
+        'Json van de mailtemplates aangepast zodat default en custom templates beter aansluiten bij de app',
+        'Kleine functionele bijsturingen in de bestaande flow waar iets niet helemaal logisch zat',
+        'Reviewopmerkingen rond leesbaarheid en consistentie verwerkt'
+      ],
+      fixed: [],
+      knownIssues: [
+        'Lambda- en layerkant van het ticket staat klaar voor volgende week, basis (json, placeholders en UI) is af'
+      ]
+    }
+  },
+  {
     id: 'week-12',
     week: 12,
     version: 'v2.1',
