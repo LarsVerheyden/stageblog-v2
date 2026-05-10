@@ -2,6 +2,52 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-14',
+    week: 14,
+    version: 'v2.3',
+    title: 'Placeholders corrigeren, hook voor mailtemplate en grote opkuis',
+    date: '2026-05-10',
+    teaser:
+      'Deze week ging ik verder met feedback op placeholders: sommige pasten niet bij de juiste context, bijvoorbeeld een klantnaam waar het over een leverancier ging. Dat aanpassen kostte tijd, vooral omdat ik moest uitzoeken wat in de transportsector logisch is. (ben zelf niet echt thuis in de transportsector) Op maandag na een korte wandeling met Ismat nog kort gedart, ik ben daar (helaas) niet zo sterk in. Ik was al begonnen aan de hook voor de e-mailbodytemplate en maakte die deze week af. Billing en invoice zette ik in als testsubject. Daarna verplaatste ik code uit apiIntegration en companyService naar eigen integration- en servicebestanden. Samen met Ismat deed ik nog een implementatieronde met veel knippen en plakken en verwijderen, zo kon ik een kleine vijftien tot twintig dubbele bestanden wegdoen. Op donderdag werkte ik alles technisch af maar deed de beoogde functionaliteit het niet, zonder foutmelding. Ik kon het probleem beperken tot één useEffect, maar de exacte oorzaak bleef onduidelijk tot later. Verder was er een tweede intervisiemoment met medestudenten en testte ik ook verschillende soorten mails. Ongeveer drie kwart van de mailtypes doet wat ik wil, de rest is nog niet getest of nog niet in orde door tijdgebrek.',
+    tags: ['code', 'wins', 'lessons-learned', 'team'],
+    highlights: [
+      'Hook voor emailBodyTemplate: eerst veel werk om te starten, daarna afgerond na veel denkwerk over meerdere bestanden',
+      'Billing en invoice als testsubject uitgewerkt',
+      'Refactor: code uit apiIntegration en companyService naar eigen integration en service gezet',
+      'Implementatie: veel dubbele code weg, ongeveer vijftien tot twintig bestanden verwijderd',
+      'Bug zonder errors: gedrag klopt niet, oorzaak ingeperkt tot één useEffect, verder uitpluizen is voor een andere dag',
+      'Tweede intervisiemoment: stage en verschillen tussen werkplekken besproken met medestudenten',
+      'Na het intervisiemoment naar huis met (weer) wat treinvertraging, daarna verder aan auto mailtemplates',
+      'Auto mailtemplates verder getest: ruwweg drie kwart van de mailtypes werkt zoals bedoeld'
+    ],
+    technicalSpotlight: {
+      title: 'Veel bestanden, één hook en stille bugs',
+      content:
+        'Een hook voor een mailtemplate raakt snel veel plekken in de codebase. Als je oude code opruimt en naar eigen modules verplaatst, helpt dat om het overzicht te houden. Als iets niet werkt maar de console blijft leeg, moet je stap voor stap volgen wat er in een useEffect gebeurt. Dan weet je tenminste waar je verder moet zoeken, ook al is de echte fout nog niet gevonden. (een duidelijke error hebben was gemakkelijker geweest)'
+    },
+    learned: [
+      'Placeholders zijn pas goed als de naam ook bij de juiste rol hoort, voor transport moet je soms even navragen wat gebruikelijk is',
+      'Grote refactor met veel verwijderen voelt goed, maar daarna moet je alles nog eens testen, wat veel werk is',
+      'Geen foutmelding wil nog niet zeggen dat alles goed gaat',
+    ],
+    changelog: {
+      added: [
+        'Hook voor emailBodyTemplate en uitwerking van billing en invoice als testsubject',
+        'Eigen integration- en servicebestanden voor code die eerst in apiIntegration en companyService zat'
+      ],
+      changed: [
+        'Placeholders aangepast na feedback zodat namen beter bij de context passen',
+        'Implementatie doorgevoerd in andere bestanden na afstemming met Ismat, dubbele functionaliteit verwijderd'
+      ],
+      fixed: [],
+      knownIssues: [
+        'Billing en invoice als testsubject getest na implementatie',
+        'Probleem met gedrag van een useEffect na grote refactor, verder onderzoek gebeurt maandag',
+        'Ongeveer een kwart van de mailtypes nog niet af: niet getest, fouten nog niet bekeken of nog niet opgelost'
+      ]
+    }
+  },
+  {
     id: 'week-13',
     week: 13,
     version: 'v2.2',
