@@ -38,6 +38,16 @@ export function BlogDetail() {
           Terug naar releases
         </Link>
 
+        {post.image && (
+          <div className="mb-8 mx-auto max-w-2xl overflow-hidden rounded-2xl border border-[var(--glass-border)] bg-[var(--card)] shadow-lg">
+            <img
+              src={post.image}
+              alt={`Afscheidsmoment week ${post.week}, hapjes, drank en darts`}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        )}
+
         {/* Header */}
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
@@ -70,17 +80,6 @@ export function BlogDetail() {
             ))}
           </div>
         </div>
-
-        {/* Optionele afbeelding bij de release */}
-        {post.image && (
-          <div className="mb-8 mx-auto max-w-md overflow-hidden rounded-2xl border border-[var(--glass-border)] bg-[var(--card)] shadow-lg">
-            <img
-              src={post.image}
-              alt={`Week ${post.week} – ${post.title}`}
-              className="w-full h-auto object-contain"
-            />
-          </div>
-        )}
 
         {/* Teaser */}
         <div className="p-6 rounded-2xl bg-[var(--card)] border border-[var(--glass-border)] backdrop-blur-sm mb-8">

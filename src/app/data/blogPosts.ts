@@ -2,6 +2,52 @@ import { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'week-15',
+    week: 15,
+    version: 'v2.4',
+    title: 'Custom mails testen, documentatie schrijven en stage afronden',
+    date: '2026-05-17',
+    image: '/images/week-15.png',
+    teaser:
+      'Deze week was korter door de feestdag, maar er was nog veel te doen. Op maandag testte en verfijnde ik de custom mailfunctionaliteit. Dertien van de vijftien mailtypes werkten al zoals bedoeld. In de sprintmeeting kon ik tonen wat ik gebouwd had. De custom e-mailhandtekening en de custom auto mail werden goed ontvangen. Daarna deed ik code cleanup en kleine aanpassingen, ook in de vertalingen, zodat alles netter en consistenter oogde. De volgende dagen lag de nadruk op afronding en documentatie. Ik werkte de user guide verder uit en schreef technische documentatie over wat al klaar is en wat er nog moet gebeuren om het ticket af te ronden. Ook startte ik de laatste testfase voor custom fields for truck. Ik schreef de eerste systeemtests in Playwright. Toen de software en packages correct geïnstalleerd waren, kon ik verder testen en extra tests toevoegen. Tegen het einde verwerkte ik feedback over mijn stage en rondde ik mijn laatste documenten af. Ik schreef nog extra tests voor de truckfunctionaliteit en een korte reflectie voor Ismat. Als afsluiter was er een klein afscheidsmoment met een hapje, drankje en darts. Zo eindigde de stage op een leuke en persoonlijke manier.',
+    tags: ['code', 'wins', 'lessons-learned', 'team', 'reflectie'],
+    highlights: [
+      'Custom mailfunctionaliteit verder getest en verfijnd: dertien van de vijftien mailtypes werken zoals bedoeld',
+      'Sprintmeeting: demo van custom e-mailhandtekening en custom auto mail, beide positief onthaald',
+      'Code cleanup en kleine aanpassingen, onder andere in de vertalingen, voor een nettere en consistentere app',
+      'User guide verder uitgewerkt en technische documentatie over status en openstaande punten van het ticket',
+      'Laatste testfase voor custom fields for truck gestart met eerste systeemtests in Playwright',
+      'Feedback over de stage verwerkt, laatste documenten afgerond en korte reflectie voor Ismat geschreven',
+      'Afscheidsmoment met hapje, drankje en darts als persoonlijke afsluiter van de stage'
+    ],
+    technicalSpotlight: {
+      title: 'Testen en documenteren naast afwerken',
+      content:
+        'Bij mailtypes helpt het om ze één voor één te testen en bij te houden welke al goed zijn. Documentatie over wat klaar is en wat nog openstaat, maakt het makkelijker om een ticket later af te ronden of over te dragen. Voor Playwright-tests moet je setup eerst kloppen. Als packages en software pas laat goed staan, verlies je tijd. Dan is het nuttig om die installatie vroeg te regelen, zodat je de rest van de week echt kunt testen.'
+    },
+    learned: [
+      'Positieve feedback in de sprintmeeting geeft vertrouwen, maar twee mailtypes en open ticketwerk blijven aandacht vragen',
+      'Goede documentatie en tests maken het makkelijker om werk over te dragen of later verder te zetten',
+    ],
+    changelog: {
+      added: [
+        'Technische documentatie over voortgang en openstaande punten voor het mailticket',
+        'Eerste en extra systeemtests in Playwright voor custom fields for truck',
+        'Korte reflectie voor Ismat en verwerking van stagefeedback'
+      ],
+      changed: [
+        'Custom mailfunctionaliteit verder verfijnd, vertalingen en kleine UI-aanpassingen voor meer consistentie',
+        'User guide verder uitgewerkt'
+      ],
+      fixed: [],
+      knownIssues: [
+        'Twee van de vijftien mailtypes moeten nog getest of afgerond worden',
+        'Custom fields for truck: testfase loopt, meer systeemtests kunnen nog volgen',
+        'Ticket rond custom mails nog niet volledig afgesloten volgens technische documentatie'
+      ]
+    }
+  },
+  {
     id: 'week-14',
     week: 14,
     version: 'v2.3',
